@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoGrupa">
+        <activity
+            android:name=".GestionAdmM2"
+            android:exported="false" />
+        <activity
+            android:name=".ModificadorTiendaGes"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarTiendaGESTOR"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoGrupa" />
+        <activity
+            android:name=".ModificarTiendaADM"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".PedidoModificar"
+            android:exported="false" />
+        <activity
+            android:name=".UsuarioModificar"
+            android:exported="false" />
+        <activity
+            android:name=".GestionUsu"
+            android:exported="false" />
+        <activity
+            android:name=".GestionClientes"
+            android:exported="false" />
+        <activity
+            android:name=".GestionPedidos"
+            android:exported="false" />
+        <activity
+            android:name=".GestionProducto"
+            android:exported="false" />
+        <activity
+            android:name=".TiendaGestor"
+            android:exported="false" />
+        <activity
+            android:name=".TiendaAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".GestionGestorM"
+            android:exported="false" />
+        <activity
+            android:name=".GestionAdmM"
+            android:exported="false" />
+        <activity
+            android:name=".GestionAdminMenu"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoGrupa" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".IniciSesion"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
