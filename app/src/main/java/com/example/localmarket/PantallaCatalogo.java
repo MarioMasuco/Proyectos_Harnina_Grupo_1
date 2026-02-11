@@ -189,6 +189,5 @@ public class PantallaCatalogo extends AppCompatActivity {
         datos.add(new FiltroItem(FiltroItem.TIENDA, "Ferretox"));
 
         return datos;
-
     }
 }
