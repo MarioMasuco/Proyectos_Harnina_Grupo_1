@@ -54,6 +54,7 @@ public class PantallaPagoRealizado extends AppCompatActivity {
         btnMenu = findViewById(R.id.btnMenu);
         btnCarrito = findViewById(R.id.btnCarrito);
 
+
         // Menú inferior
         btnFavoritos = findViewById(R.id.btnFavorito);
         btnInvernadero = findViewById(R.id.btnInvernadero);
