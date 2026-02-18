@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.ProyectoGrupa" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.LocalMarket" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -11,4 +12,5 @@
     </style>
 
     <style name="Theme.ProyectoGrupa" parent="Base.Theme.ProyectoGrupa" />
+    <style name="Theme.LocalMarket" parent="Base.Theme.LocalMarket" />
 </resources>

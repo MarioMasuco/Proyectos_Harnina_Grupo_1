@@ -9,6 +9,12 @@ android {
     defaultConfig {
         applicationId = "com.example.proyectogrupa"
         minSdk = 24
+    namespace = "com.example.localmarket"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.localmarket"
+        minSdk = 30
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"

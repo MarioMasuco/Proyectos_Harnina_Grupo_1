@@ -69,6 +69,30 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+        android:theme="@style/Theme.LocalMarket">
+        <activity
+            android:name=".PantallaInvernadero"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPagoRealizado"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPago"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaConfiguracion"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaFavorito"
+            android:exported="false" /> <!-- 🧺 CESTA -->
+        <activity
+            android:name=".PantallaCesta"
+            android:exported="false" /> <!-- 📦 PRODUCTO -->
+        <activity
+            android:name=".PantallaProducto"
+            android:exported="false" /> <!-- 🏠 CATÁLOGO (MAIN) -->
+        <activity
+            android:name=".PantallaCatalogo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

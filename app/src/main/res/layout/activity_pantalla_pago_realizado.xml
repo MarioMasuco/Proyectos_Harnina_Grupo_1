@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <!-- ================= TOOLBAR ================= -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPagoRealizado"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:background="#294FA3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- MENU -->
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/iconomen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75"
+                app:tint="@android:color/white" />
+
+            <!-- IMAGEN TEXTO PAGOS -->
+
+            <!-- ICONO CESTA -->
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pagoslogo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.415"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.773" />
+
+            <ImageView
+                android:id="@+id/btnCarrito"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.811" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- ================= FILTRO ================= -->
+    <include
+        android:id="@+id/filtroInclude"
+        layout="@layout/filtro_recyclerview"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbarPagoRealizado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- ================= CONTENIDO ================= -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/toolbarPagoRealizado"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- IMAGEN PAGO REALIZADO -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="353dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pagorealizado" />
+
+        <!-- TEXTO COMPRA REALIZADA -->
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/botoncomprapago"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <!-- ================= BOTTOM NAV ================= -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#294FA3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/btnFavorito"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/favori"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/btnInvernadero"
+            android:layout_width="94dp"
+            android:layout_height="77dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/sensor" />
+
+        <ImageView
+            android:id="@+id/btnAjuste"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/botones"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
