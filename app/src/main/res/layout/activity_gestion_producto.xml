@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".GestionAdmM">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="414dp"
+        android:layout_height="645dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo2" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="396dp"
+        android:layout_height="918dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/fonfo3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inicio9"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:background="@drawable/botoncolorpre2"
+
+        android:clickable="true"
+
+        android:focusable="true"
+        android:stateListAnimator="@null"
+
+        android:text="Modificar"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inicio8"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:background="@drawable/botoncolorpre_crear"
+
+        android:clickable="true"
+
+        android:focusable="true"
+        android:stateListAnimator="@null"
+
+        android:text="Crear"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inicio6"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:background="@drawable/botoncolorpre_eliminar"
+
+        android:clickable="true"
+
+        android:focusable="true"
+        android:stateListAnimator="@null"
+
+        android:text="Eliminar"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="415dp"
+        android:layout_height="155dp"
+        android:background="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fuenteregular"
+            android:text="Productos de la tienda_nombre"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.838" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/conf"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/favoritos" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="136dp"
+        android:layout_height="127dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/invernadero" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="327dp"
+        android:layout_height="72dp"
+        android:text="Selecione un producto para eliminar ,modificar o gestionar"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inicio"
+        android:layout_width="276dp"
+        android:layout_height="32dp"
+
+        android:background="@drawable/botoncolorpre2"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:stateListAnimator="@null"
+        android:text="ver tienda"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="324dp"
+        android:background="@color/gris"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recycler_view_producto" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

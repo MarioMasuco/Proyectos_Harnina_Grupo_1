@@ -19,6 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
+rootProject.name = "proyectoGrupa"
 rootProject.name = "LocalMarket"
 include(":app")
  

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Este TextView es opcional, ya que puedes usar setMessage() del diálogo,
+         pero te da más control sobre el estilo si lo pones aquí. -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp">
+
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bocadillo_dialogo"
+            android:hint="   Nombre"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.648"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.235" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre tienda:"
+            android:textAlignment="inherit"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:layout_editor_absoluteY="78dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/etCorreo3"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bocadillo_dialogo"
+            android:hint="   Nombre Usu"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.802"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.241" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usu propietario"
+            android:textAlignment="inherit"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:layout_editor_absoluteY="39dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="359dp"
+        android:layout_height="208dp">
+
+
+        <EditText
+            android:id="@+id/etCorreo2"
+            android:layout_width="340dp"
+            android:layout_height="147dp"
+            android:background="@drawable/bocadillo_dialogo"
+            android:inputType="textEmailAddress"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.611" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:"
+            android:textAlignment="inherit"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:layout_editor_absoluteX="-13dp"
+            tools:layout_editor_absoluteY="184dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="234dp"
+            android:layout_height="34dp" />
+
+        <Space
+            android:layout_width="95dp"
+            android:layout_height="41dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inicio7"
+            android:layout_width="174dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/botoncolorpre_crear"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            android:stateListAnimator="@null"
+            android:text="Crear"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+    </LinearLayout>
+
+    <!-- Color azul para la línea inferior -->
+
+</LinearLayout>
