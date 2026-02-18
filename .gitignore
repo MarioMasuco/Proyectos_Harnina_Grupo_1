@@ -1,0 +1,24 @@
+# --- Android Studio / IntelliJ ---
+*.iml
+.idea/
+!.idea/.gitignore
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+
+# (Si queréis conservar alguna config concreta, se añade con !)
+# Por defecto, mejor ignorar .idea completa en equipos.
+
+# --- Gradle / local ---
+.gradle/
+**/build/
+local.properties
+**/local.properties
+
+# --- Android / outputs ---
+/captures/
+/.externalNativeBuild/
+/.cxx/
+
+# --- Mac / Windows basura ---
+.DS_Store
+Thumbs.db
