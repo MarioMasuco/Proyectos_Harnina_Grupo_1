@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.proyectos_harnina_grupo_1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Proyectos_Harnina_Grupo_1"
+        android:usesCleartextTraffic="true">
+
+        <!-- LAUNCHER -->
+        <activity
+            android:name=".proyectogrupa.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AUTENTICACIÓN -->
+        <activity
+            android:name=".proyectogrupa.IniciSesion"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.Registro"
+            android:exported="false" />
+
+        <!-- ADMINISTRADOR -->
+        <activity
+            android:name=".proyectogrupa.GestionAdmM"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionAdmM2"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.TiendaAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionUsu"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.UsuarioModificar"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionClientes"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionPedidos"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.PedidoModificar"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionProducto"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.ModificarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.ModificarTiendaADM"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.ModificarPedido"
+            android:exported="false" />
+
+        <!-- GESTOR -->
+        <activity
+            android:name=".proyectogrupa.GestionGestorM"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionGestorM2"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.TiendaGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionPedidosGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.PedidoModificarGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionProductoGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.ModificarProductoGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.GestionClientesGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.UsuarioModificarGestor"
+            android:exported="false" />
+        <activity
+            android:name=".proyectogrupa.ModificadorTiendaGes"
+            android:exported="false" />
+
+        <!-- CLIENTE (LOCAL MARKET) -->
+        <activity
+            android:name=".localmarket.PantallaCatalogo"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaProducto"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaCesta"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaFavorito"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaPago"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaPagoRealizado"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaConfiguracion"
+            android:exported="false" />
+        <activity
+            android:name=".localmarket.PantallaInvernadero"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

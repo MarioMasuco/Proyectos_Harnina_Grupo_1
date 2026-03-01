@@ -1,0 +1,21 @@
+package com.example.proyectos_harnina_grupo_1.localmarket;
+
+public class ProductoCesta {
+
+    public String nombre;
+    public String info;
+    public double precio;
+    public int cantidad;
+    public int imagenRes;
+    public String imagenUrl;
+
+    public ProductoCesta(String nombre, String info, double precio,
+                         int cantidad, int imagenRes, String imagenUrl) {
+        this.nombre    = nombre;
+        this.info      = info;
+        this.precio    = precio;
+        this.cantidad  = cantidad;
+        this.imagenRes = imagenRes;
+        this.imagenUrl = imagenUrl;
+    }
+}

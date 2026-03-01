@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/bg_white_ripple"
+    android:layout_margin="4dp">
+
+  <!-- Imagen del Producto a la izquierda -->
+  <ImageView
+      android:id="@+id/fotoTienda"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_marginEnd="12dp"
+      android:scaleType="centerCrop"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <!-- Contenedor de todo el texto a la derecha -->
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+    <!-- 1. Nombre del Producto -->
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Taladro Percutor" />
+
+    <!-- 2. DESCRIPCIÓN DEL PRODUCTO -->
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        tools:text="Esta es la descripción del producto. Ahora se ve claramente." />
+
+    <!-- 3. Categorías -->
+    <TextView
+        android:id="@+id/permisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="11sp"
+        tools:text="Categorías: Herramientas, Electricidad" />
+
+    <!-- 4. Precio y Stock -->
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        tools:text="99.99€ | Stock: 5" />
+
+  </LinearLayout>
+
+  <!-- Icono de Estado a la derecha del todo -->
+  <ImageView
+      android:id="@+id/estado"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_gravity="top|end"
+      app:srcCompat="@drawable/estado_activo"
+      tools:ignore="ContentDescription" />
+
+</LinearLayout>

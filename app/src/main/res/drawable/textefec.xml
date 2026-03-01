@@ -1,0 +1,25 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado enfocado (cuando el usuario toca el EditText) -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <size android:height="2dp" /> <!-- grosor de la línea -->
+            <stroke
+                android:width="2dp"
+                android:color="#006AF9" /> <!-- Azul más claro al enfocar -->
+        </shape>
+    </item>
+
+    <!-- Estado normal -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <size android:height="2dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#004AAD" /> <!-- Azul oscuro normal -->
+        </shape>
+    </item>
+
+</selector>

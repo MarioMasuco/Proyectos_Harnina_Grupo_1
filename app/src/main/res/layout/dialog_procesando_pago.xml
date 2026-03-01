@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💳"
+        android:textSize="52sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procesando pago"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#294FA3"
+        android:layout_marginBottom="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressPago"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:indeterminate="true"
+        android:progressTint="#294FA3"
+        android:indeterminateTint="#294FA3"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtEstadoPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectando con el banco..."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No cierres la aplicación"
+        android:textSize="12sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

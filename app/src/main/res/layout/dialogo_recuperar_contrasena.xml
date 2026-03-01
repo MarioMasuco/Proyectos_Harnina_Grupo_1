@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Este TextView es opcional, ya que puedes usar setMessage() del diálogo,
+         pero te da más control sobre el estilo si lo pones aquí. -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Introduzca su correo de usuario."
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="375dp"
+        android:layout_height="137dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inicio2"
+            android:layout_width="107dp"
+            android:layout_height="39dp"
+            android:background="@drawable/botoncolorpre"
+
+            android:clickable="true"
+
+            android:focusable="true"
+            android:stateListAnimator="@null"
+
+            android:text="Enviar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.836" />
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="323dp"
+            android:layout_height="67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:srcCompat="@drawable/bocadillo_inicio1" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="308dp"
+            android:layout_height="38dp"
+            android:background="@null"
+            android:hint="correo@ejemplo.com"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="@+id/foto"
+            app:layout_constraintEnd_toEndOf="@+id/foto"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="@+id/foto"
+            app:layout_constraintTop_toTopOf="@+id/foto"
+            app:layout_constraintVertical_bias="0.206" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Color azul para la línea inferior -->
+
+</LinearLayout>

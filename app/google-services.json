@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "725743020871",
+    "project_id": "proyectogrupal-5cd6c",
+    "storage_bucket": "proyectogrupal-5cd6c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725743020871:android:885560c9cf5f71bc11ba62",
+        "android_client_info": {
+          "package_name": "com.example.proyectogrupa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEBq4yCtdpXZ9ujzPEizsbmpivd2_hoKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725743020871:android:16f2c1c00ddc798611ba62",
+        "android_client_info": {
+          "package_name": "com.example.proyectos_harnina_grupo_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEBq4yCtdpXZ9ujzPEizsbmpivd2_hoKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

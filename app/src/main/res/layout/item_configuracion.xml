@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- ================= IMAGEN + RUEDA ================= -->
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPerfil"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iniciologo"/>
+
+            <ImageView
+                android:id="@+id/btnEditarPerfil"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:src="@drawable/botones"
+                android:padding="8dp"
+                app:tint="@android:color/black"/>
+        </FrameLayout>
+
+        <!-- ================= FILAS ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <!-- NOMBRE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="6dp">
+
+                <TextView
+                    android:tag="txtNombre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre usuario: —"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/btnEditarNombre"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/botones"
+                    app:tint="@android:color/black"/>
+            </LinearLayout>
+
+            <!-- EMAIL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="6dp">
+
+                <TextView
+                    android:tag="txtEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email: —"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/btnEditarEmail"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/botones"
+                    app:tint="@android:color/black"/>
+            </LinearLayout>
+
+            <!-- CONTRASEÑA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="6dp">
+
+                <TextView
+                    android:tag="txtContrasena"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contraseña: ••••••••"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/btnEditarContrasena"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/botones"
+                    app:tint="@android:color/black"/>
+            </LinearLayout>
+
+            <!-- TIPO USUARIO (solo texto, sin engranaje) -->
+            <TextView
+                android:tag="txtRol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de usuario: —"
+                android:textSize="15sp"
+                android:paddingVertical="6dp"/>
+
+            <!-- HISTORIAL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historial de compra"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#294FA3"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:tag="txtHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sin pedidos registrados"
+                android:textSize="13sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

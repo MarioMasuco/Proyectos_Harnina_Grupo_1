@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="10dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:background="#2ED59E">
+
+    <!-- CÍRCULO BLANCO SEMITRANSPARENTE + ICONO con sus colores reales -->
+    <FrameLayout
+        android:id="@+id/frameIcono"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/circle_sensor_icon_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSensor"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
+        <!-- Sin app:tint para mostrar colores originales del drawable -->
+    </FrameLayout>
+
+    <!-- NOMBRE SENSOR -->
+    <TextView
+        android:id="@+id/txtNombreSensor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre sensor"
+        android:textStyle="bold"
+        android:textColor="#0B4F3B"
+        android:textSize="16sp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/frameIcono"
+        app:layout_constraintEnd_toStartOf="@id/txtInfoSensor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"/>
+
+    <!-- VALOR SENSOR -->
+    <TextView
+        android:id="@+id/txtInfoSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- --"
+        android:textColor="#0B4F3B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
